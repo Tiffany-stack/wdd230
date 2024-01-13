@@ -1,0 +1,14 @@
+/* styles/larger.css */
+
+@media (min-width: 768px) {
+    /* Adjust styles for larger views */
+    nav {
+        flex-direction: row;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}

@@ -1,0 +1,83 @@
+/* base.css */
+
+/* Reset some default styles for better consistency */
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+header {
+    background-color: #6495ED; /* Cornflower blue background for the header */
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%; /* Make the profile image round */
+    max-width: 100%;
+    height: auto;
+}
+
+header span {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #fff; /* White text color */
+}
+
+nav {
+    background-color: #4169E1; /* Royal blue background for the navigation */
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: #fff; /* White text color for navigation links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #87CEEB; /* Sky blue color when hovering over navigation links */
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    color: #4169E1; /* Royal blue color for the main heading */
+}
+
+.card {
+    background-color: #fff; /* White background for cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #4169E1; /* Royal blue background for the footer */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#lastModified {
+    font-style: italic;
+    color:#87CEEB
+}
