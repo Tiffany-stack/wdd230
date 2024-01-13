@@ -1,0 +1,64 @@
+/* styles/chamber-site-plan.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2196f3; /* Blue */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Center the text in each section */
+.site-info, .scenarios, .color-schema, .typography, .wireframe {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text in each section */
+}
+
+/* Style adjustments for section headings and content */
+.site-info h2, .scenarios h2, .color-schema h2, .typography h2, .wireframe h2 {
+    color: #2196f3; /* Blue */
+}
+
+.site-info p, .scenarios ul, .color-schema p, .typography p {
+    color: #555;
+}
+
+.site-info ul {
+    list-style-type: none; /* Remove bullets from list items in site-info */
+    padding: 0;
+}
+
+.wireframe img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    /* Adjust layout for larger screens */
+    .wireframe {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-view, .desktop-view {
+        width: 48%;
+    }
+}
+
+.scenarios ul {
+    list-style-type: none; /* Remove bullets from list items in scenarios */
+    padding: 0;
+}
