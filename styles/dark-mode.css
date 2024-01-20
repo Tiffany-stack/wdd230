@@ -1,0 +1,11 @@
+/* styles/dark-mode.css */
+
+/* Dark mode styles */
+main.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+nav.show-menu.dark-mode {
+    background-color: #333;
+}
