@@ -1,0 +1,121 @@
+/* Reset or normalize CSS goes here */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #4caf50;
+    color: #1565c0;
+    margin: 0;
+}
+
+header {
+    background-color: #1565c0;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #4caf50;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main {
+    padding: 1rem;
+}
+
+/* ... (previous styles) */
+
+/* ... (previous styles) */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(76, 175, 80, 0.5); /* Use the green color from your site plan with some transparency */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 1; /* Ensure content is above the image */
+}
+
+/* ... (remaining styles) */
+
+
+/* ... (previous styles) */
+
+.call-to-action {
+    text-align: center; /* Center-align the button */
+}
+
+.cta-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background-color: #1565c0;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* ... (remaining styles) */
+
+
+.current-events  {
+    list-style: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.weather-info {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.company-spotlights {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
