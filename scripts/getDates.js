@@ -14,4 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
     menuToggle.addEventListener('click', function () {
         nav.classList.toggle('show-menu');
     });
+
+    // Toggle dark mode
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const main = document.querySelector('main');
+
+    darkModeToggle.addEventListener('click', function () {
+        main.classList.toggle('dark-mode');
+        nav.classList.toggle('dark-mode');
+    });
 });

@@ -87,6 +87,7 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
     padding: 1rem;
+    color: #333; /* Dark gray text color */
 }
 
 footer {
@@ -120,6 +121,7 @@ nav.show-menu {
 nav.show-menu a {
     padding: 1rem 0;
     order: 2;
+    color: #fff; /* White text color for navigation links in dark mode */
 }
 
 nav.show-menu #menu-toggle {
