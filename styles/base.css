@@ -86,8 +86,9 @@ h1 {
     background-color: #fff; /* White background for cards */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 30px;
     color: #333; /* Dark gray text color */
+    border-radius: 10px;
 }
 
 footer {

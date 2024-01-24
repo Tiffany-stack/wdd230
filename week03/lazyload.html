@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Demo</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading Demo</h1>
+    </header>
+
+    <main>
+        <!-- Image elements will be added here -->
+        <picture>
+            <img src="https://placekitten.com/400/600" alt="Placeholder Kitten Image" loading="lazy" width="400">
+        </picture>
+        <picture><img src="https://placekitten.com/400/700" alt="Placeholder Kitten Image" loading="lazy" width="400"></picture>
+        <picture><img src="https://placekitten.com/400/800" alt="Placeholder Kitten Image" loading="lazy" width="400"></picture>
+        <picture><img src="https://placekitten.com/400/650" alt="Placeholder Kitten Image" loading="lazy" width="400"></picture>
+        <picture><img src="https://placekitten.com/400/750" alt="Placeholder Kitten Image" loading="lazy" width="400"></picture>
+        <picture><img src="https://placekitten.com/400/850" alt="Placeholder Kitten Image" loading="lazy" width="400"></picture>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> • Tiffany Claire Nocos • Philippines </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
