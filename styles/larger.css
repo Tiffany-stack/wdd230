@@ -1,14 +1,149 @@
-/* styles/larger.css */
+/* Reset some default styles for better consistency */
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    font-size: 16px; /* Adjust base font size */
+}
+
+header {
+    background-color: #6495ED; /* Cornflower blue background for the header */
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    border-radius: 50%; /* Make the profile image round */
+    max-width: 100%;
+    height: auto;
+}
+
+header span {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #fff; /* White text color */
+}
+
+nav {
+    background-color: #4169E1; /* Royal blue background for the navigation */
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    position: relative; /* Add this line to make it a stacking context */
+}
+
+nav a {
+    color: #fff; /* White text color for navigation links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #87CEEB; /* Sky blue color when hovering over navigation links */
+}
+
+nav #menu-toggle {
+    display: none; /* Hide by default on larger screens */
+}
+
+nav.show-menu #menu-toggle {
+    display: block;
+    order: 3;
+    position: absolute;
+    top: 1rem; /* Adjust as needed */
+    right: 1rem; /* Adjust as needed */
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 20px;
+}
+
+main.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+h1 {
+    color: #4169E1; /* Royal blue color for the main heading */
+}
+
+.card {
+    background-color: #fff; /* White background for cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    padding: 20px; /* Adjust padding */
+    color: #333; /* Dark gray text color */
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #4169E1; /* Royal blue background for the footer */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#lastModified {
+    font-style: italic;
+    color: #87CEEB;
+}
+
+nav.show-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #4169E1;
+    text-align: center;
+    z-index: 1;
+}
+
+nav.show-menu a {
+    padding: 1rem 0;
+    order: 2;
+    color: #fff; /* White text color for navigation links in dark mode */
+}
+
+nav.show-menu #menu-toggle {
+    order: 3;
+}
+
+nav.show-menu a:hover {
+    background-color: #87CEEB;
+}
+
+nav.show-menu #menu-toggle::after {
+    content: '✕';
+}
+
+nav.show-menu #menu-toggle:hover {
+    background-color: transparent;
+}
+
+/* Larger screen styles */
 @media (min-width: 768px) {
-    /* Adjust styles for larger views */
     nav {
         flex-direction: row;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
     }
 }

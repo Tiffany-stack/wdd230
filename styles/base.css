@@ -1,5 +1,3 @@
-/* base.css */
-
 /* Reset some default styles for better consistency */
 body, h1, h2, ul, p {
     margin: 0;
@@ -11,6 +9,7 @@ body {
     line-height: 1.6;
     background-color: #f0f0f0; /* Light gray background */
     color: #333; /* Dark gray text color */
+    font-size: 16px; /* Adjust base font size */
 }
 
 header {
@@ -70,7 +69,8 @@ main {
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    display: grid;
+    gap: 20px;
 }
 
 main.dark-mode {
@@ -86,7 +86,7 @@ h1 {
     background-color: #fff; /* White background for cards */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
-    padding: 30px;
+    padding: 20px; /* Adjust padding */
     color: #333; /* Dark gray text color */
     border-radius: 10px;
 }
@@ -145,11 +145,5 @@ nav.show-menu #menu-toggle:hover {
 @media (min-width: 768px) {
     nav {
         flex-direction: row;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
     }
 }
