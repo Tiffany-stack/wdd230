@@ -1,0 +1,236 @@
+/* Reset or normalize CSS goes here */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #4caf50;
+    color: #1565c0;
+    margin: 0;
+}
+
+header {
+    background-color: #1565c0;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #4caf50;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main {
+    padding: 1rem;
+}
+
+/* ... (previous styles) */
+
+/* ... (previous styles) */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(76, 175, 80, 0.5); /* Use the green color from your site plan with some transparency */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 1; /* Ensure content is above the image */
+}
+
+/* ... (remaining styles) */
+
+
+/* ... (previous styles) */
+
+.call-to-action {
+    text-align: center; /* Center-align the button */
+}
+
+.cta-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background-color: #1565c0;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* ... (remaining styles) */
+
+
+.current-events  {
+    list-style: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.weather-info {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.company-spotlights {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+/* Your existing styles for your entire website */
+
+/* Additional styles for the discover.html page */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar, Main Area */
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Single column layout for mobile view */
+    }
+}
+
+/* Style for the sidebar */
+.sidebar {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+/* Style for the main area images */
+.main-area img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease; /* Add a smooth transition for the hover effect */
+}
+
+/* Additional styles for the hover effect */
+.main-area img:hover {
+    opacity: 0.8;
+}
+
+/* Add more styles as needed */
+
+
+footer {
+    padding: 2rem;
+    background-color: #1565c0;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+
+/* Additional styles for image cards */
+.main-area .image-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd; /* Add border for a card-like appearance */
+    border-radius: 8px; /* Optional: Add rounded corners for a softer look */
+    margin-bottom: 20px;
+}
+
+.main-area .image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main-area .image-card figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for better readability */
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/* Add these styles to your existing CSS file */
+
+/* Sidebar styling */
+.sidebar {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    color: #1565c0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.sidebar section {
+    margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    color: #1565c0;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.sidebar p, .sidebar ul {
+    margin-bottom: 10px;
+}
+
+/* Adjust these styles as needed */
