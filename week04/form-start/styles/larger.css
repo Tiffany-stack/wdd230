@@ -1,0 +1,91 @@
+/* Resetting some default browser styles */
+body, figure, h1, h2, h3, h4, h5, h6, p, fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+/* Applying a basic styling to the entire page */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f8ff; /* AliceBlue */
+  color: #333;
+}
+
+/* Header styling */
+header {
+  background-color: #87ceeb; /* SkyBlue */
+  padding: 1rem 2%;
+}
+
+header h1 {
+  margin: 0;
+  color: #fff;
+}
+
+header h2 {
+  margin: 0;
+  font-weight: normal;
+  color: #fff;
+}
+
+/* Navigation styling */
+nav {
+  background-color: #4682b4; /* SteelBlue */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  float: left;
+  width: 25%;
+}
+
+nav ul li a {
+  display: block;
+  background-color: #4169e1; /* RoyalBlue */
+  color: #fff;
+  border-left: 1px solid #87ceeb; /* SkyBlue */
+  padding: 0.5rem 0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+nav ul li:first-child a {
+  border-left: none;
+}
+
+nav ul li a:hover {
+  background-color: #b0e0e6; /* PowderBlue */
+  color: #333;
+}
+
+nav ul li.active a {
+  background-color: #1e90ff; /* DodgerBlue */
+  color: #fff;
+}
+
+/* Main content styling */
+main {
+  padding: 0 2%;
+  min-height: 20rem;
+}
+
+/* Footer styling */
+footer {
+  background-color: #87ceeb; /* SkyBlue */
+  padding: 0.5rem 2%;
+  text-align: center;
+  color: #fff;
+}
+
+/* Clearfix for floated elements */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
