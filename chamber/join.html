@@ -44,7 +44,20 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             margin-left: 10px;
+           
+
+           
         }
+        
+        #membershipBenefits {
+            display: none; /* Hide benefits by default */
+
+            /* Add media query to display benefits only on larger screens */
+            @media screen and (min-width: 600px) {
+                display: block;
+            }
+        }
+       
 
         form {
             max-width: 100%;
