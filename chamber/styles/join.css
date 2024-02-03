@@ -1,71 +1,84 @@
-/* styles/form.css */
-:root {
-    --primary-color: #3498db;
-    --background-color: #ecf0f1;
-    --text-color: #2c3e50;
-}
-
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    background-color: #4caf50;
+    color: #1565c0;
     margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-nav {
-    background-color: var(--primary-color);
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
 }
 
 main {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensure the main content takes at least the full viewport height */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
 }
 
-form {
-    max-width: 600px;
-    margin: auto; /* Center the form horizontally */
-    flex: 1; /* Allow the form to grow and take remaining space vertically */
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-}
-
-output {
-    display: inline-block;
+.form-container,
+#membershipBenefits {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
     margin-left: 10px;
 }
 
+form {
+    max-width: 100%;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 31.5px;
+    box-sizing: border-box;
+    
+}
+
+#membershipBenefits {
+    text-align: left;
+}
+
+.membership-level {
+    margin-bottom: 20px;
+   
+}
+
+header {
+    background-color: #1565c0;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #4caf50;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
 
 footer {
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: #1565c0;
+    color: #ffffff;
+    padding: 1rem;
     text-align: center;
-    padding: 10px;
 }
+
+/* ... (previous styles) */

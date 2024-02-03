@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cebu Business Hub Chamber of Commerce</title>
+    <title>Cebu Business Hub Chamber of Commerce - Join</title>
 
-        <!-- Open Graph Meta Tags -->
+    <!-- Open Graph Meta Tags -->
     <!-- Replace og:image and og:url with actual values for your project -->
     <meta property="og:title" content="Tiffany Claire Nocos - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tiffany-stack.github.io/wdd230/chamber">
+    <meta property="og:url" content="https://tiffany-stack.github.io/wdd230/chamber/join.html">
     
-    <link rel="stylesheet" href="styles/join.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
@@ -19,6 +18,95 @@
     <link rel="stylesheet" href="styles/larger.css">   
     <link rel="icon" href="favicon-16x16.png"> 
     <!-- Add social media meta settings here -->
+    <style>
+        /* Add new styles for join.html */
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #4caf50;
+            color: #1565c0;
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 1rem;
+        }
+
+        .form-container,
+        #membershipBenefits {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+
+        form {
+            max-width: 100%;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        form input,
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 31.5px;
+            box-sizing: border-box;
+            
+        }
+
+        #membershipBenefits {
+            text-align: left;
+        }
+
+        .membership-level {
+            margin-bottom: 20px;
+           
+        }
+
+        header {
+            background-color: #1565c0;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #4caf50;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: #1565c0;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* ... (previous styles) */
+
+    </style>
 </head>
 <body>
     <header>
@@ -27,7 +115,7 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="#">Contact</a></li>
             <!-- Add other navigation links based on your project description -->
@@ -35,27 +123,85 @@
     </nav>
 
     <main>
-        <!-- Form goes here -->
-        <form action="thankyou.html" method="get">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
+        <div class="form-container">
+            <form action="thankyou.html" method="get">
+                <label for="firstName">Applicant's First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required>
+                <label for="lastName">Applicant's Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
 
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <label for="title">Applicant's Title or Position:</label>
+                <input type="text" id="title" name="title" pattern="[A-Za-z -]{7,}" required>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-                title="Please enter a valid email address">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
 
-            <label for="pageRating">Page Rating</label>
-            <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1">
-            <output for="pageRating">0</output>
+                <label for="phone">Mobile Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
 
-            <input type="submit" value="Submit">
-        </form>
+                <label for="organization">Business/Organization's Name:</label>
+                <input type="text" id="organization" name="organization" required>
+
+                <label for="membershipLevel">Membership Level:</label>
+                <select id="membershipLevel" name="membershipLevel" required>
+                    <option value="NP">NP Membership (No Fee)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+
+                <label for="description">Business/Organization's Description:</label>
+                <textarea id="description" name="description"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                <input type="submit" value="Submit Application">
+            </form>
+        </div>
+
+        <div id="membershipBenefits">
+            <h2>Membership Level Benefits</h2>
+            <div class="membership-level">
+                <h3>NP Membership (No Fee)</h3>
+                <p>Benefits:</p>
+                <ul>
+                    <li>Access to special events organized for non-profit organizations</li>
+                    <li>Training sessions tailored for non-profits</li>
+                </ul>
+            </div>
+
+            <div class="membership-level">
+                <h3>Bronze Membership</h3>
+                <p>Benefits:</p>
+                <ul>
+                    <li>Access to special events and networking opportunities</li>
+                    <li>Training sessions on business development and growth</li>
+                    <li>Opportunities for advertising in chamber publications</li>
+                </ul>
+            </div>
+
+            <div class="membership-level">
+                <h3>Silver Membership</h3>
+                <p>Benefits:</p>
+                <ul>
+                    <li>All benefits of Bronze Membership</li>
+                    <li>Discounts on chamber-sponsored events and workshops</li>
+                    <li>Prominent advertising opportunities in chamber communications</li>
+                </ul>
+            </div>
+
+            <div class="membership-level">
+                <h3>Gold Membership</h3>
+                <p>Benefits:</p>
+                <ul>
+                    <li>All benefits of Silver Membership</li>
+                    <li>Premium advertising positions on the chamber's website</li>
+                    <li>Exclusive access to high-profile events and VIP networking</li>
+                    <li>Sponsorship opportunities for chamber events</li>
+                </ul>
+            </div>
+        </div>
     </main>
 
     <footer>
