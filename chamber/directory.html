@@ -11,11 +11,10 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tiffany-stack.github.io/wdd230/chamber">
     
+    <link rel="stylesheet" href="styles/directory.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">   
     <link rel="icon" href="favicon-16x16.png"> 
     <!-- Add social media meta settings here -->
 </head>
@@ -34,51 +33,24 @@
     </nav>
 
     <main>
-        <section class="hero">
-            <div class="hero-overlay"></div>
-            <img src="images/peoplework.jpeg" alt="Hero Image" class="mobile">
-            <img src="images/peoplework.jpeg" alt="Hero Image" class="larger">
-            <div class="hero-content">
-                <h2>Welcome to Cebu Business Hub</h2>
-                <p>Discover opportunities for economic growth and collaboration.</p>
-            </div>
-        </section>
-        
+        <div id="view-toggle">
+            <label for="grid-view">Grid View</label>
+            <input type="radio" id="grid-view" name="view-type" checked>
+            <label for="list-view">List View</label>
+            <input type="radio" id="list-view" name="view-type">
+        </div>
 
-        <section class="call-to-action">
-            <a href="join.html" class="cta-button">Join the Chamber</a>
-        </section>
-        
-
-        <section class="current-card">
-            <div class="current-events">
-                <p>Upcoming Events</p>
-                <p>Event 1</p>
-                <p>Event 2</p>
-            </div>
-        </section>
-
-        <section class="weather-card">
-            <div class="weather-info">
-                <p>Current Weather: Sunny</p>
-                <p>Temperature: 25°C</p>
-            </div>
-        </section>
-
-        <section class="company-spotlights">
-            <h3>Spotlight: Local Businesses</h3>
-            <div class="spotlights">
-                <!-- Add spotlight content as needed -->
-            </div>
-        </section>
+        <div id="members-container" class="grid-view">
+            <!-- Member cards will be dynamically added here -->
+        </div>
     </main>
-
     <footer>
         <p>&copy; <span id="year"></span> • Tiffany Claire Nocos • Philippines </p>
         <p>WDD 230 • Contact: contact@cebubusinesshub.com</p>
         <p id="lastModified"></p>
     </footer>
 
+    <script src="scripts/app.js"></script>
     <script src="scripts/getDates.js"></script>
 </body>
 </html>

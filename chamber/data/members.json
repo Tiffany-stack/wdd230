@@ -1,0 +1,40 @@
+[
+    {
+      "name": "Company A",
+      "address": "123 Main St, City",
+      "phone": "123-456-7890",
+      "website": "http://www.companya.com",
+      "image": "company_a_logo.png",
+      "membershipLevel": "Gold",
+      "additionalInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "Company B",
+      "address": "456 Oak St, Town",
+      "phone": "987-654-3210",
+      "website": "http://www.companyb.com",
+      "image": "company_b_logo.png",
+      "membershipLevel": "Silver",
+      "additionalInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "name": "Company C",
+      "address": "789 Pine St, Village",
+      "phone": "555-123-4567",
+      "website": "http://www.companyc.com",
+      "image": "company_c_logo.png",
+      "membershipLevel": "Bronze",
+      "additionalInfo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+    },
+    {
+      "name": "Company D",
+      "address": "101 Cedar St, Hamlet",
+      "phone": "777-555-1234",
+      "website": "http://www.companyd.com",
+      "image": "company_d_logo.png",
+      "membershipLevel": "Platinum",
+      "additionalInfo": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+    
+  ]
+  
