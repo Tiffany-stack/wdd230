@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cebu Business Hub Chamber of Commerce</title>
+    <title>Tiffany Claire Nocos - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Tiffany Claire Nocos course assignment portal">
+    <meta name="author" content="Tiffany Claire Nocos">
 
-        <!-- Open Graph Meta Tags -->
-    <!-- Replace og:image and og:url with actual values for your project -->
+    
     <meta property="og:title" content="Tiffany Claire Nocos - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tiffany-stack.github.io/wdd230/chamber">
@@ -20,8 +21,21 @@
     <!-- Add social media meta settings here -->
 </head>
 <body>
+    <div class="container1">
+        <div class="date">2/20/2024</div>
+        <div class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+    </div>
+
     <header>
+        <img src="images/Untitled design (1).png" alt="Logo">
         <h1>Cebu Business Hub Chamber of Commerce</h1>
+
+       
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/in/tiffany-claire-nocos-637198257/" target="_blank"><img src="images/linked in.png" alt="LinkedIn"></a>
+        </div>
     </header>
 
     <nav>
@@ -29,7 +43,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="join.html">Join</a></li>
             <!-- Add other navigation links based on your project description -->
         </ul>
     </nav>
@@ -61,25 +75,65 @@
 
         <section class="weather-card">
             <div class="weather-info">
-                <p>Current Weather: Sunny</p>
-                <p>Temperature: 25°C</p>
+                <h2>Weather </h2>
+                <p><span id="current-temp">56°F</span></p>
+                <figure>
+                    <img id="weather-icon" src="https://openweathermap.org/img/w/04n.png" alt="overcast clouds">
+                    <figcaption>overcast clouds</figcaption>
+                </figure>
             </div>
         </section>
-
+        
         <section class="company-spotlights">
-            <h3>Spotlight: Local Businesses</h3>
-            <div class="spotlights">
-                <!-- Add spotlight content as needed -->
-            </div>
+           <div class="local"><h3>Spotlight: Local Businesses</h3></div>
+            
+                <div class="company">
+                    <a href="https://www.intel.com" target="_blank">
+                        <img src="https://via.placeholder.com/150" alt="Intel Logo">
+                    </a>
+                    <p><a href="https://www.intel.com" target="_blank">Intel Corporation</a></p>
+                </div>
+                <div class="company">
+                    <a href="https://www.example.com/company2" target="_blank">
+                        <img src="https://via.placeholder.com/150" alt="Company 2 Logo">
+                    </a>
+                    <p><a href="https://www.example.com/company2" target="_blank">Company 2</a></p>
+                </div>
+                <div class="company">
+                    <a href="https://www.example.com/company3" target="_blank">
+                        <img src="https://via.placeholder.com/150" alt="Company 3 Logo">
+                    </a>
+                    <p><a href="https://www.example.com/company3" target="_blank">Company 3</a></p>
+                </div>
+                <div class="company">
+                    <a href="https://www.example.com/company3" target="_blank">
+                        <img src="https://via.placeholder.com/150" alt="Company 3 Logo">
+                    </a>
+                    <p><a href="https://www.example.com/company3" target="_blank">Company 3</a></p>
+                </div>
+                <div class="company">
+                    <a href="https://www.example.com/company3" target="_blank">
+                        <img src="https://via.placeholder.com/150" alt="Company 3 Logo">
+                    </a>
+                    <p><a href="https://www.example.com/company3" target="_blank">Company 3</a></p>
+                </div>
+                <div class="company">
+                    <a href="https://www.example.com/company3" target="_blank">
+                        <img src="https://via.placeholder.com/150" alt="Company 3 Logo">
+                    </a>
+                    <p><a href="https://www.example.com/company3" target="_blank">Company 3</a></p>
+                </div>
+                
+            
         </section>
     </main>
 
     <footer>
+        <img src="images/Untitled design (1).png" alt="Logo">
         <p>&copy; <span id="year"></span> • Tiffany Claire Nocos • Philippines </p>
         <p>WDD 230 • Contact: contact@cebubusinesshub.com</p>
         <p id="lastModified"></p>
     </footer>
-
     <script src="scripts/getDates.js"></script>
 </body>
 </html>
