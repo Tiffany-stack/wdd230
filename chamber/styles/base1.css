@@ -3,7 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #4caf50;
-    color: #1565c0;
+    color: #000000;
     margin: 0;
 }
 
@@ -41,6 +41,7 @@ h1 {
     padding: 1rem;
     color: yellow;
 }
+
 
 * {
     padding: 0;
@@ -275,3 +276,6 @@ footer {
 }
 
 /* Adjust these styles as needed */
+footer p#lastModified {
+    color: yellow; /* Add this line to set the text color to yellow */
+}

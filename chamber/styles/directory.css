@@ -39,6 +39,15 @@ h1 {
     color: yellow;
 }
 
+.banner  {
+    background-color: #333; /* Change this to the color you want */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.date {
+    background-color: #333; /* Change this to the color you want */
+    padding: 10px; /* Adjust padding as needed */
+}
 * {
     padding: 0;
     box-sizing: border-box;
@@ -190,4 +199,8 @@ footer {
     color: #ffffff;
     padding: 1rem;
     text-align: center;
+}
+
+footer p#lastModified {
+	color: yellow; /* Add this line to set the text color to yellow */
 }
